@@ -1,11 +1,6 @@
 def FindOne(num:int):
     ones = 0
-    a = num
-
-    num = str(num)
-    length = len(num)
     
-
     while True:
         num = str(num)
         length = len(num)

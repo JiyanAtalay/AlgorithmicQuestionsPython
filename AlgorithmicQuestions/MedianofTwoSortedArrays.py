@@ -12,7 +12,6 @@ sleep(1)
 
 while(True):
     x = input("1.dizinin {}.elemani:".format(i))
-    i += 1
 
     if x == "q":
         break
@@ -27,6 +26,7 @@ while(True):
     
     if flag1 == 1:
         nums1.append(x)
+        i += 1
     
 sleep(1)
 print("\n")

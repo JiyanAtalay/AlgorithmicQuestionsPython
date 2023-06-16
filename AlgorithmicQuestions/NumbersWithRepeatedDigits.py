@@ -25,6 +25,11 @@ while True:
     except ValueError:
         print("Sayi girmeniz gerekmektedir\n")
         flag = 0
-    if flag == 1:break
+    if flag == 1:
+        if x<=0:
+            print("Pozitif bir sayi girmelisiniz!!!")
+            flag = 0
+        else:
+            break
 
 print("Tekrar sayisi =",FindRepeatedDigits(x))

@@ -35,10 +35,15 @@ if FindPalindromic(x) and FindPrime(x):
     print(x)
     exit()
 
+alt = x
+ust = x
+
 while True:
-    x += 1
-    if FindPalindromic(x) and FindPrime(x):
+    alt -= 1
+    ust += 1
+    if FindPalindromic(alt) and FindPrime(alt):
+        print("\nClosest Prime Palindrome =",alt)
         break
-
-
-print("\nClosest Prime Palindrome =",x)
+    elif FindPalindromic(ust) and FindPrime(ust):
+        print("\nClosest Prime Palindrome =",ust)
+        break
